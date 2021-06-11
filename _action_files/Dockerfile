@@ -1,5 +1,7 @@
 FROM fastai/jekyll:2020-12-30
 
+RUN pip install git+https://github.com/yacchin1205/nbdev.git@fix/attached-images
+
 WORKDIR /fastpages
 COPY . .
 RUN chmod u+x action_entrypoint.sh
