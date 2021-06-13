@@ -123,3 +123,10 @@ feed:
 
 exclude:
   - settings.ini
+
+header_pages:
+  - _pages/introduction_en.md
+  - _pages/introduction_ja.md
+  - _pages/tools_en.md
+  - _pages/search.html
+  - _pages/tags.html
