@@ -52,7 +52,7 @@ window.onload = wrap_img;
 </head>
 <body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/"><img src='images/literate_computing-logo.png'/></a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/"><img src='/fastpages/images/literate_computing-logo.png'/></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -67,97 +67,21 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h2 id="what-is-lc4ri">What is <span class="text-info">LC4RI</span>?</h2>
+        <div class="home"><h1 id="what-is-lc4ri">What is LC4RI?</h1>
+
 <p>It is as essential as to share and communicate about infrastructure design and elaborated workflows with participants as to actually automate complex operations.
-<span class="text-info">Literate Computing for Reproducible Infrastructure</span> is an approach both to describe automated operations as live code and to share predicted and reproducible outcomes among technical and non-technical alike in the form of narrative stories.  We utilize <span class="text-info">Jupyter Notebook</span> for sharing the reproducible experience.
+<strong>Literate Computing for Reproducible Infrastructure</strong>(LC4RI) is an approach both to describe automated operations as live code and to share predicted and reproducible outcomes among technical and non-technical alike in the form of narrative stories.  We utilize <span class="text-info">Jupyter Notebook</span> for sharing the reproducible experience.
 Operational engineering and DevOps should be one of the distinctive application areas for Jupyter.</p>
 
-<h4 id="automated-operation-機械化--automation-自働化">“Automated Operation” [機械化] ≠ “Automation” [自働化]</h4>
+<p><a href="introduction_en/">Details</a></p>
 
-<p>We want to accomplish traceability and reproducibility in engineering operations. For those primary purposes, we utilize computational narrative tools, i.e., Jupyter Notebook. Every operation is described with no doubt and can be automated. Automated operation is always along with humans in the loop and bound up with a situation. It is something different from distilled automation, which tends to result in an anesthetizing effect
-<i><small><small><span class="text-muted">(<a href="https://image.slidesharecdn.com/jupytercon-masatani-170825211000/95/jupytercon-2017-collaboration-and-automated-operation-as-literate-computing-for-reproducible-infrastructure-26-638.jpg">Nicholas InCarr. The Glass Cage</a>)
-</span></small></small></i>
-.
-Automated operation is a partnership between humans and machines and augments our ability to learn and expertise.</p>
+<h1 id="lc4riとは">LC4RIとは？</h1>
 
-<h4 id="collaboration-and-communication">Collaboration and Communication</h4>
+<p><strong>Literate Computing for Reproducible Infrastructure</strong>（以下 「LC4RI」）は、インフラ運用の場面において <strong>機械的に再現できる、人が読み解ける手順</strong> を手段として、過度に自動化に依存することのない、レジリエントな <strong>人間中心の機械化</strong> をめざしています。そこでは、作業を効率化しつつもブラックボックス化せず、作業に対する理解をチーム内でコミュニケーションできる、また、目的と手段の整合性や限界を理解し議論・評価できると言った場を維持することで、<strong>ノウハウの移転・共有を促し運用者のスキル向上とエンジニアリングチームの再生産</strong>をはかることを重視しています。</p>
 
-<p>For reproducibility and resilience for long-term sustainability, it is crucial not only to share knowledge but also to share reproducible experience participating in both tech and non-tech alike. Narrative stories allow collaborative communication between experts and novices to accumulate infrastructure knowledge and operational experience within an operation team. Moreover, it is efficient to share an understanding of how infrastructure is usable and really works between tech ops and non-tech users. Narrative stories also help communicate with users about how services are delivered and customized, considering reproducibility.</p>
+<p>多くの現場では、管理サーバにログインしコンソール上で作業を行う、作業内容や証跡はWiki等に随時転記して共有する.. といった形態が一般的と思います。これに対しLC4RIでは運用管理サーバ上にNotebookサーバを配備し、作業単位毎にNotebookを作成、作業内容やメモを記述しながら随時実行するといった作業形態を推奨しています。作業の証跡を齟齬なく記録する仕組み、過去の作業記録を参照して機械的に再現あるいは流用できる仕組み、機械的に実行できるとともに人が読み解き補完することもできるNotebook手順を整備しています。</p>
 
-<h2 id="literate-computing-tools">Literate Computing tools</h2>
-<p>Literate Computing Tools are our enhancements to Jupyter for achieving the following goals:</p>
-<ul>
-  <li>Giving awareness where you are; the cells are colored depending on their statuses. You can see how an operation is in progress and whether it has been succeeded. Light Cyan, Linen, and Pink represent “running”, “finished successfully” and “finished with errors” respectively.</li>
-  <li>Preventing miss-operation; once a cell has been executed, it “freezes” against unintended execution. Frozen cells will not be executed nor edited until those will be unfrozen.</li>
-  <li>A good operational outlook; as an enhancement for collapsible headings, collapsed code cells underneath are represented as bricks. The number of bricks represents operational complexities. Plus, you can run through whole bricks (collapsed code cells) with one click as a routine procedure. Color changes of bricks also represent the progress.</li>
-  <li>Assure traceability; infrastructure operation can generate massive output lines. LC_wrapper kernel summarizes output lines, and simultaneously all original output lines are saved into an individual file with a timestamp at each execution. You can investigate the total output and compare it with previous results for reviewing.</li>
-</ul>
-
-<h2 id="try-the-demo">Try the Demo</h2>
-
-<p>You can start the Notebook server on port 8888 with the following command.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it --rm -p 8888:8888 niicloudoperation/notebook:latest
-</code></pre></div></div>
-
-<p><a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_docker" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></p>
-
-<p>You can login the Notebook server with the authentication token in the startup message.</p>
-
-<h2 id="jupyter-extensions">Jupyter Extensions</h2>
-
-<p><a href="https://github.com/NII-cloud-operation/Jupyter-LC_run_through">LC_run_through Extension</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_run_through" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></p>
-
-<center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
-</center>
-
-<p><a href="https://github.com/NII-cloud-operation/Jupyter-LC_wrapper">LC_wrapper Kernel</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_wrapper" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></p>
-
-<center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
-</center>
-
-<h2 id="other-extensions">Other Extensions</h2>
-
-<ul>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-multi_outputs">multi_outputs</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-multi_outputs" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_nblineage">nblineage</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_nblineage" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_index">Jupyter-LC_index</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_index" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-i18n_cells">i18n_cells</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-i18n_cells" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-</ul>
-
-<dl class="dl-horizontal">
-  <dt>...</dt>
-  <dd>...</dd>
-</dl>
-<h2 id="notebooks-for-reproducible-infrastructure">Notebooks for Reproducible Infrastructure</h2>
-
-<ul>
-  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Basics">Literate-computing-Basics</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Literate-computing-Basics" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Hadoop">Literate-computing-Hadoop</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Literate-computing-Hadoop" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Elasticsearch">Literate-computing-Elasticsearch</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Literate-computing-Elasticsearch" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-</ul>
-
-<font color="MidnightBlue">
-<h2><i>Memo</i></h2>
-</font>
-
-<p>The following video presents early practices back to late 2015 and 2016Q1.  Since then, we have been developed <em>Literate Computing Tools</em> as enhancement of <a href="https://jupyter.org/">Jupyter</a>.</p>
-
-<center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
-</center>
-
+<p><a href="introduction_ja/">詳細</a></p>
 
 
 
