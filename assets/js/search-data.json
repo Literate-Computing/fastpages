@@ -4,9 +4,9 @@
         "post0": {
             "title": "Attached image",
             "content": "The following is an attached image. . . Result . あれ？ . watcher_1 | converting: _notebooks/2021-06-11_attached-image.ipynb watcher_1 | [Errno 2] No such file or directory: &#39;/data/_notebooks/attachment:image.png&#39; watcher_1 | Conversion failed on the following: watcher_1 | 2021-06-11_attached-image.ipynb . Reason? . I assume that the error [Errno 2] No such file or directory: &#39;/data/_notebooks/attachment:image.png&#39; occurred because the image was defined as![image.png](attachment:image.png) .",
-            "url": "https://literate-computing.github.io/fastpages/2021/06/12/_attached-image.html",
-            "relUrl": "/2021/06/12/_attached-image.html",
-            "date": " • Jun 12, 2021"
+            "url": "https://literate-computing.github.io/fastpages/2021/06/13/_attached-image.html",
+            "relUrl": "/2021/06/13/_attached-image.html",
+            "date": " • Jun 13, 2021"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "fastpages",
             "content": ".",
-            "url": "https://literate-computing.github.io/fastpages/2021/06/12/_03_fastpages%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB.html",
-            "relUrl": "/2021/06/12/_03_fastpages%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB.html",
-            "date": " • Jun 12, 2021"
+            "url": "https://literate-computing.github.io/fastpages/2021/06/13/_03_fastpages%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB.html",
+            "relUrl": "/2021/06/13/_03_fastpages%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB.html",
+            "date": " • Jun 13, 2021"
         }
         
     
@@ -116,6 +116,14 @@
   
 
   
+      ,"page9": {
+          "title": "ツール(ja)",
+          "content": "Literate Computing tools . Literate Computing Tools are our enhancements to Jupyter for achieving the following goals: . Giving awareness where you are; the cells are colored depending on their statuses. You can see how an operation is in progress and whether it has been succeeded. Light Cyan, Linen, and Pink represent “running”, “finished successfully” and “finished with errors” respectively. | Preventing miss-operation; once a cell has been executed, it “freezes” against unintended execution. Frozen cells will not be executed nor edited until those will be unfrozen. | A good operational outlook; as an enhancement for collapsible headings, collapsed code cells underneath are represented as bricks. The number of bricks represents operational complexities. Plus, you can run through whole bricks (collapsed code cells) with one click as a routine procedure. Color changes of bricks also represent the progress. | Assure traceability; infrastructure operation can generate massive output lines. LC_wrapper kernel summarizes output lines, and simultaneously all original output lines are saved into an individual file with a timestamp at each execution. You can investigate the total output and compare it with previous results for reviewing. | . Try the Demo . You can start the Notebook server on port 8888 with the following command. . docker run -it --rm -p 8888:8888 niicloudoperation/notebook:latest . Star . You can login the Notebook server with the authentication token in the startup message. . Jupyter Extensions . LC_run_through Extension Star . {% include youtube.html id=’pkzE_nwtEKQ’ %} . LC_wrapper Kernel Star . {% include youtube.html id=’-28XG7aHYY8’ %} . Other Extensions . multi_outputs Star | nblineage Star | Jupyter-LC_index Star | i18n_cells Star | . ... ... Notebooks for Reproducible Infrastructure . Literate-computing-Basics Star | Literate-computing-Hadoop Star | Literate-computing-Elasticsearch Star | . {% raw %} . Memo . {% endraw %} . The following video presents early practices back to late 2015 and 2016Q1. Since then, we have been developed Literate Computing Tools as enhancement of Jupyter. . {% include youtube.html id=’T309jbgdaqI’ %} .",
+          "url": "https://literate-computing.github.io/fastpages/tools_ja/",
+          "relUrl": "/tools_ja/",
+          "date": ""
+      }
+      
   
 
   
@@ -125,7 +133,10 @@
   
 
   
-      ,"page12": {
+  
+
+  
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://literate-computing.github.io/fastpages/robots.txt",
