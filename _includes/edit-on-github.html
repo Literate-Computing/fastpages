@@ -1,0 +1,7 @@
+{%- unless page.path contains "_posts" %}
+<div class="edit-on-github">
+  <a href=https://www.github.com/{{ site.github_username }}/{{ site.github_repo }}/blob/master/{{ page.path }}>
+    <img class="github-logo" src="{{ "assets/badges/edit-on-github.svg" | relative_url }}" alt="Edit On GitHub">
+  </a>
+</div>
+{%- endunless -%}
