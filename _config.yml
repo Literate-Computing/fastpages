@@ -14,7 +14,7 @@ github_repo: "fastpages"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value.
-url: "https://Literate-Computing.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://literate-computing.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -39,8 +39,7 @@ baseurl: "/fastpages" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    github: NII-cloud-operation
 
 # Set this to true to get LaTeX math equation support
 use_math:
@@ -64,6 +63,7 @@ exclude:
   - docker-compose.yml
   - action.yml
   - Makefile
+  - Dockerfile
 
 # this setting allows you to keep pages organized in the _pages folder
 include:
@@ -71,7 +71,7 @@ include:
 
 # This specifies what badges are turned on by default for notebook posts.
 default_badges:
-  github: true
+  github: false
   binder: true
   colab: false
 
