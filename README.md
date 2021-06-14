@@ -16,6 +16,8 @@ _powered by [fastpages](https://github.com/fastai/fastpages)_
 - トップページの内容を編集したい ... [index.html](index.html) を編集・コミット
 - ページ(What is LC4RI?等)を編集したい ... [_pages](_pages) を編集・コミット
   - 新規ページを追加する場合は [_config.yml](_config.yml) の `header_pages` を編集すること
+- Postを投稿したい ... [_notebooks](_notebooks) にipynbファイルをアップロード
+  - ファイル名のルール等はREADME参照
 
 
 ## What To Do Next?
