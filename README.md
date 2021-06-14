@@ -14,6 +14,8 @@ _powered by [fastpages](https://github.com/fastai/fastpages)_
 編集方法... 本環境ではPushすると自動的にビルドされます: [ビルド状況](https://github.com/Literate-Computing/fastpages/actions)
 
 - トップページの内容を編集したい ... [index.html](index.html) を編集・コミット
+- ページ(What is LC4RI?等)を編集したい ... [_pages](_pages) を編集・コミット
+  - 新規ページを追加する場合は [_config.yml](_config.yml) の `header_pages` を編集すること
 
 
 ## What To Do Next?
