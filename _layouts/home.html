@@ -3,6 +3,13 @@ layout: default
 ---
 
 <div class="home">
+  <div class="container">
+    <div class="jumbotron">
+      <h1><span class="text-info">L</span>iterate <span class="text-info">C</span>omputing <span class="text-info">for R</span>eproducible <span class="text-info">I</span>nfrastructure</h1>
+      <p class="lead"><small><small><b><span class="text-danger">Jupyter</span> based Toolset for an Infrastructure Engineer - <span class="text-danger">文芸的機械化</span>のススメ</b></small></small></p>
+      <iframe src="https://ghbtns.com/github-btn.html?user=Literate-Computing&repo=literate-computing.github.io&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+    </div>
+  </div>
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -29,7 +36,7 @@ layout: default
   {% assign sticky_posts = ''|split:'' %}
   {% assign non_sticky_posts = '' | split:'' %}
 
- 
+
   {% for gp in grouped_posts %}
     {%- if gp.name == "" -%}
       {% assign non_sticky_posts = gp.items | sort: "date" | reverse %}
