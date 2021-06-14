@@ -77,57 +77,6 @@ window.onload = wrap_img;
 
 <p>多くの現場では、管理サーバにログインしコンソール上で作業を行う、作業内容や証跡はWiki等に随時転記して共有する.. といった形態が一般的と思います。これに対しLC4RIでは運用管理サーバ上にNotebookサーバを配備し、作業単位毎にNotebookを作成、作業内容やメモを記述しながら随時実行するといった作業形態を推奨しています。作業の証跡を齟齬なく記録する仕組み、過去の作業記録を参照して機械的に再現あるいは流用できる仕組み、機械的に実行できるとともに人が読み解き補完することもできるNotebook手順を整備しています。</p>
 
-<hr />
-<h3 id="nii-open-house-2019-用のデモを試す">NII Open House 2019 用のデモを試す</h3>
-<p>このデモ環境ではJupyterのインタフェースを使って、運用作業の一例としてのログ分析や、我々のチームがLC4RIの実践のために開発している各種Extensionを使ってみるといった体験ができます。</p>
-
-<p><big><span style="background-color:lightyellow;">
-<a href="https://mybinder.org/v2/gh/NII-cloud-operation/Jupyter-LC_docker/openhouse-2019-demo">openhouse-2019-demo</a>
-</span></big></p>
-
-<p>なお、この環境ではNotebookを自由に作成、編集することができますが、Notebookに対する変更等は、 <strong>保存されません</strong> 。この環境は<a href="https://mybinder.readthedocs.io/en/latest/">Binder</a>サービスの上でデプロイされており、一定時間が経過すると自動的に削除されます。編集したNotebookなどの情報は失われますのでご注意ください。</p>
-
-<p>また、Sidestickies という Notebookに対して付箋を付与する機能では <a href="https://scrapbox.io/product/">Scrapbox</a>サービスを利用しています。デモ環境の Sidestickies 付箋ページ は参照のみで、編集できません。</p>
-
-<blockquote>
-  <p><span style="background-color:mistyrose;"> <strong>デモ環境を体験するに際して、 <a href="https://mybinder.readthedocs.io/en/latest/">Binder</a> および <a href="https://scrapbox.io/product/">Scrapbox</a> の利用規約は各自で確認ください。</strong> </span></p>
-</blockquote>
-
-<blockquote>
-  <p><span style="background-color:mistyrose;"> 質問等、お問い合わせは、Facebookページ https://www.facebook.com/groups/LiterateComputing/ に参加申請ください！</span></p>
-</blockquote>
-
-<h4 id="notebookの実行方法">Notebookの実行方法</h4>
-
-<p>このデモ環境では、Notebookという形式で、実際に自身で実行可能な運用作業の例が保存されています。</p>
-
-<ul>
-  <li><a href="00_デモ環境の利用方法.ipynb">00_デモ環境の利用方法</a>を参考に、実際に実行をしてみてください。</li>
-</ul>
-
-<h5 id="literate-computingの運用への適用例">Literate Computingの運用への適用例</h5>
-
-<p>運用への適用例の一つとして、ログを分析する手順を記述したNotebookを体感いただけます。</p>
-
-<ul>
-  <li><a href="01_Literate_Computingの運用への適用例.ipynb">01_Literate_Computingの運用への適用例</a></li>
-</ul>
-
-<h5 id="nii謹製literate-computing機能拡張">NII謹製Literate Computing機能拡張</h5>
-<p>Jupyterはもともとデータ分析用途に開発されたツールであるため、インフラの運用に適用するためにいくつかの機能拡張を施しています。以下は、その内容をご紹介するNotebookです。</p>
-
-<ul>
-  <li><a href="02_NII謹製_Jupyterの機能拡張について.ipynb">02_NII謹製_Jupyterの機能拡張について</a></li>
-</ul>
-
-<h5 id="notebookを介したコミュニケーションについて">Notebookを介したコミュニケーションについて</h5>
-
-<p>Jupyterで行った経験を効率的に共有するためにいくつかの機能拡張を施しています。以下は、その内容をご紹介するNotebookです。</p>
-
-<ul>
-  <li><a href="03_Notebookを介したコミュニケーション.ipynb">03_Notebookを介したコミュニケーション</a></li>
-</ul>
-
 <h2 id="jupyter拡張">Jupyter拡張</h2>
 
 <ul>
@@ -137,6 +86,8 @@ window.onload = wrap_img;
   <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_nblineage">nblineage</a></li>
   <li><a href="https://github.com/NII-cloud-operation/Jupyter-i18n_cells">i18n_cells</a></li>
 </ul>
+
+<p><a href="../tools_ja/">ツールの詳細</a></p>
 
   </div>
 
