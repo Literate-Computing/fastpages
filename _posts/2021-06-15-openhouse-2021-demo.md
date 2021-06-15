@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: デモ環境のお知らせ
-categories: [demo]
+categories: [demo, news]
 title: 国立情報学研究所オープンハウス 2021 デモ環境のお知らせ
 ---
 
