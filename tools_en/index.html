@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Tools(en) | Literate Computing for Reproducible Infrastructure</title>
+<title>LC4RI tools(en) | Literate Computing for Reproducible Infrastructure</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Tools(en)" />
+<meta property="og:title" content="LC4RI tools(en)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An approach for infrastructure operations using Jupyter Notebooks" />
 <meta property="og:description" content="An approach for infrastructure operations using Jupyter Notebooks" />
@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://literate-computing.github.io/fastpages/tools_en/" />
 <meta property="og:site_name" content="Literate Computing for Reproducible Infrastructure" />
 <script type="application/ld+json">
-{"description":"An approach for infrastructure operations using Jupyter Notebooks","url":"https://literate-computing.github.io/fastpages/tools_en/","@type":"WebPage","headline":"Tools(en)","@context":"https://schema.org"}</script>
+{"description":"An approach for infrastructure operations using Jupyter Notebooks","url":"https://literate-computing.github.io/fastpages/tools_en/","@type":"WebPage","headline":"LC4RI tools(en)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://literate-computing.github.io/fastpages/feed.xml" title="Literate Computing for Reproducible Infrastructure" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -61,7 +61,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/fastpages/introduction_en/">What is LC4RI?(en)</a><a class="page-link" href="/fastpages/introduction_ja/">LC4RIとは？(ja)</a><a class="page-link" href="/fastpages/tools_en/">Tools(en)</a><a class="page-link" href="/fastpages/tools_ja/">ツール(ja)</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/fastpages/introduction_en/">What is LC4RI?(en)</a><a class="page-link" href="/fastpages/introduction_ja/">LC4RIとは？(ja)</a><a class="page-link" href="/fastpages/tools_en/">LC4RI tools(en)</a><a class="page-link" href="/fastpages/tools_ja/">ツール(ja)</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -69,12 +69,11 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Tools(en)</h1>
+    <h1 class="post-title">LC4RI tools(en)</h1>
   </header>
 
   <div class="post-content">
-    <h2 id="literate-computing-tools">Literate Computing tools</h2>
-<p>Literate Computing Tools are our enhancements to Jupyter for achieving the following goals:</p>
+    <p>Literate Computing Tools are our enhancements to Jupyter for achieving the following goals:</p>
 <ul>
   <li>Giving awareness where you are; the cells are colored depending on their statuses. You can see how an operation is in progress and whether it has been succeeded. Light Cyan, Linen, and Pink represent “running”, “finished successfully” and “finished with errors” respectively.</li>
   <li>Preventing miss-operation; once a cell has been executed, it “freezes” against unintended execution. Frozen cells will not be executed nor edited until those will be unfrozen.</li>
@@ -82,71 +81,57 @@ window.onload = wrap_img;
   <li>Assure traceability; infrastructure operation can generate massive output lines. LC_wrapper kernel summarizes output lines, and simultaneously all original output lines are saved into an individual file with a timestamp at each execution. You can investigate the total output and compare it with previous results for reviewing.</li>
 </ul>
 
-<h2 id="try-the-demo">Try the Demo</h2>
+<h1 id="try-the-demo">Try the Demo</h1>
 
-<p>You can start the Notebook server on port 8888 with the following command.</p>
+<p>A Docker Image containing all our tools is available in the <a href="https://github.com/NII-cloud-operation/Jupyter-LC_docker">Jupyter-LC_docker</a> repository.
+You can start the Notebook server on port 8888 with the following command.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it --rm -p 8888:8888 niicloudoperation/notebook:latest
 </code></pre></div></div>
 
-<p><a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_docker" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></p>
+<iframe src="https://ghbtns.com/github-btn.html?user=NII-cloud-operation&amp;repo=Jupyter-LC_docker&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
 
 <p>You can login the Notebook server with the authentication token in the startup message.</p>
 
 <h2 id="jupyter-extensions">Jupyter Extensions</h2>
 
-<p><a href="https://github.com/NII-cloud-operation/Jupyter-LC_run_through">LC_run_through Extension</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_run_through" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></p>
+<h3 id="lc_run_through-extension"><a href="https://github.com/NII-cloud-operation/Jupyter-LC_run_through">LC_run_through Extension</a></h3>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=NII-cloud-operation&amp;repo=Jupyter-LC_run_through&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
 
 <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pkzE_nwtEKQ" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
-<p><a href="https://github.com/NII-cloud-operation/Jupyter-LC_wrapper">LC_wrapper Kernel</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_wrapper" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></p>
+<h3 id="lc_wrapper-kernel"><a href="https://github.com/NII-cloud-operation/Jupyter-LC_wrapper">LC_wrapper Kernel</a></h3>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=NII-cloud-operation&amp;repo=Jupyter-LC_wrapper&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
 
 <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-28XG7aHYY8" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
-<h2 id="other-extensions">Other Extensions</h2>
+<h3 id="other-extensions">Other Extensions</h3>
 
 <ul>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-multi_outputs">multi_outputs</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-multi_outputs" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_nblineage">nblineage</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_nblineage" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_index">Jupyter-LC_index</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-LC_index" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Jupyter-i18n_cells">i18n_cells</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Jupyter-i18n_cells" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
+  <li><a href="https://github.com/NII-cloud-operation/Jupyter-multi_outputs">multi_outputs</a></li>
+  <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_nblineage">nblineage</a></li>
+  <li><a href="https://github.com/NII-cloud-operation/Jupyter-LC_index">Jupyter-LC_index</a></li>
 </ul>
 
-<dl class="dl-horizontal">
-  <dt>...</dt>
-  <dd>...</dd>
-</dl>
+<h2 id="platforms-for-reproducible-infrastructure">Platforms for Reproducible Infrastructure</h2>
+
+<ul>
+  <li><a href="https://github.com/NII-cloud-operation/OperationHub">OperationHub</a></li>
+</ul>
+
 <h2 id="notebooks-for-reproducible-infrastructure">Notebooks for Reproducible Infrastructure</h2>
 
 <ul>
-  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Basics">Literate-computing-Basics</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Literate-computing-Basics" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Hadoop">Literate-computing-Hadoop</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Literate-computing-Hadoop" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
-  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Elasticsearch">Literate-computing-Elasticsearch</a>
-<a class="github-button" href="https://github.com/NII-cloud-operation/Literate-computing-Elasticsearch" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
+  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Basics">Literate-computing-Basics</a></li>
+  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Hadoop">Literate-computing-Hadoop</a></li>
+  <li><a href="https://github.com/NII-cloud-operation/Literate-computing-Elasticsearch">Literate-computing-Elasticsearch</a></li>
 </ul>
-
-<font color="MidnightBlue">
-<h2><i>Memo</i></h2>
-</font>
-
-<p>The following video presents early practices back to late 2015 and 2016Q1.  Since then, we have been developed <em>Literate Computing Tools</em> as enhancement of <a href="https://jupyter.org/">Jupyter</a>.</p>
-
-<center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
-</center>
-
 
   </div>
 
