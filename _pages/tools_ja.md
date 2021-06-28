@@ -12,7 +12,7 @@ Literate Computing Toolsは、以下の目標を達成するためにJupyterを�
 - トレーサビリティの確保: インフラの運用では、大量の実行結果出力が発生します。LC_wrapperカーネルは出力内容を要約し、同時に全ての出力を実行毎にタイムスタンプ付きの個別ファイルに保存します。総出力量を調べたり、過去の結果と比較して検討することができます。
 
 
-# Try the Demo
+# デモ環境を試す
 
 我々のツールをインストールした「全部入りイメージ」を [Jupyter-LC_docker](https://github.com/NII-cloud-operation/Jupyter-LC_docker) リポジトリで公開しています。
 以下のコマンドで8888番ポートにてNotebookサーバーを起動できます。
@@ -25,7 +25,9 @@ docker run -it --rm -p 8888:8888 niicloudoperation/notebook:latest
 
 起動メッセージに表示された認証トークンを使って、ノートブックサーバーにログインすることができます。
 
-## Jupyter Extensions
+## Jupyter拡張
+
+LC4RIの実践のために開発したJupyter拡張は全てOSSとして公開しています。
 
 ### [LC_run_through Extension](https://github.com/NII-cloud-operation/Jupyter-LC_run_through)
 
@@ -39,17 +41,21 @@ docker run -it --rm -p 8888:8888 niicloudoperation/notebook:latest
 
 {% include youtube.html content='-28XG7aHYY8' %}
 
-### Other Extensions
+### その他の拡張
 
 - [multi_outputs](https://github.com/NII-cloud-operation/Jupyter-multi_outputs)
 - [nblineage](https://github.com/NII-cloud-operation/Jupyter-LC_nblineage)
 - [Jupyter-LC_index](https://github.com/NII-cloud-operation/Jupyter-LC_index)
 
-## Platforms for Reproducible Infrastructure
+## LC4RI実践用環境
+
+LC4RI実践のための環境をまとめています。
 
 - [OperationHub](https://github.com/NII-cloud-operation/OperationHub)
 
-## Notebooks for Reproducible Infrastructure
+## LC4RI実践Notebook
+
+LC4RIの実践例として各種Notebookをまとめています。
 
 - [Literate-computing-Basics](https://github.com/NII-cloud-operation/Literate-computing-Basics)
 - [Literate-computing-Hadoop](https://github.com/NII-cloud-operation/Literate-computing-Hadoop)
