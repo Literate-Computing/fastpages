@@ -46,6 +46,8 @@ LC4RIの実践のために開発したJupyter拡張は全てOSSとして公開�
 - [multi_outputs](https://github.com/NII-cloud-operation/Jupyter-multi_outputs)
 - [nblineage](https://github.com/NII-cloud-operation/Jupyter-LC_nblineage)
 - [Jupyter-LC_index](https://github.com/NII-cloud-operation/Jupyter-LC_index)
+- [sidestickies](https://github.com/NII-cloud-operation/sidestickies)
+- [nbsearch](https://github.com/NII-cloud-operation/nbsearch)
 
 ## LC4RI実践用環境
 
