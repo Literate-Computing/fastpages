@@ -43,6 +43,8 @@ You can login the Notebook server with the authentication token in the startup m
 - [multi_outputs](https://github.com/NII-cloud-operation/Jupyter-multi_outputs)
 - [nblineage](https://github.com/NII-cloud-operation/Jupyter-LC_nblineage)
 - [Jupyter-LC_index](https://github.com/NII-cloud-operation/Jupyter-LC_index)
+- [sidestickies](https://github.com/NII-cloud-operation/sidestickies)
+- [nbsearch](https://github.com/NII-cloud-operation/nbsearch)
 
 ## Platforms for Reproducible Infrastructure
 
