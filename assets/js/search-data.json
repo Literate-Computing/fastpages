@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Announcement of demo environment for SC21",
+            "content": "We have prepared a demo environment where you can experience LC4RI for SC21. Please try it out! . . Jupyter Notebook for Literate Computing for Reproducible Infrastructure . In this demo environment, you can use the Jupyter interface to analyze logs as an example of operational tasks and use various extensions that our team is developing to practice LC4RI. . Usage . The Binder service allows you to try this environment even if you do not have a suitable computing environment. Click the button below to launch the demo environment. . . You can freely create and edit notebooks in this environment, but any changes made to the notebooks will not be saved. This environment is deployed on top of the Binder service, and will be automatically deleted after a certain amount of time. Please note that you will lose the Notebook and other information you have edited. .",
+            "url": "https://literate-computing.github.io/fastpages/demo/news/2021/11/12/sc-2021-demo.html",
+            "relUrl": "/demo/news/2021/11/12/sc-2021-demo.html",
+            "date": " • Nov 12, 2021"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "国立情報学研究所オープンハウス 2021 デモ環境のお知らせ",
             "content": "国立情報学研究所オープンハウス 2021開催に合わせ、LC4RIを体験できるデモ環境をご用意しました。 みなさまぜひお試しください。 . . Jupyter Notebook for Literate Computing for Reproducible Infrastructure . NII OpenHouse 2021向けのデモ環境です。 このデモ環境ではJupyterのインタフェースを使って、運用作業の一例としてのログ分析や、我々のチームがLC4RIの実践のために開発している各種Extensionを使ってみるといった体験ができます。 . 使用方法 . このデモ環境を使用する方法としては、以下の2種類があります。 . Binderサービスを使用する . Binderサービスを使用すると、手元に計算環境がなくても、この環境を試すことができます。 以下のボタンをクリックするとお試し環境が立ち上がります。 . . なお、この環境ではNotebookを自由に作成、編集することができますが、Notebookに対する変更等は、 保存されません 。この環境はBinderサービスの上でデプロイされており、一定時間が経過すると自動的に削除されます。編集したNotebookなどの情報は失われますのでご注意ください。 . Dockerを使用する . 手元にDocker環境がある場合は、以下のコマンドでデモ環境を利用することができます。 . $ docker run -d -p 8888:8888 --name demo niicloudoperation/notebook:openhouse-2021-demo . 特にエラーなどが表示されなければ、ブラウザで http://localhost:8888 を開きます。PasswordかTokenを求められますので、 . $ docker logs demo . 上記のコマンドにより、 http://127.0.0.1:8888/?token=(トークン) という出力が得られますので、このトークンを入力します。 コンテナを停止・削除したい場合は、 . $ docker stop demo $ docker rm demo . としてください。詳しくは、Dockerコマンドラインのドキュメントを参照してください。 . デモ環境を体験するに際して、 Binder および Scrapbox の利用規約は各自で確認ください。 . 質問等、お問い合わせは、Facebookページ https://www.facebook.com/groups/792904597583420/ に参加申請ください！ . デモとして提供するNotebook . Notebookの実行方法 . このデモ環境では、Notebookという形式で、実際に自身で実行可能な運用作業の例が保存されています。 . Literate Computingの運用への適用例 . 運用への適用例の一つとして、ログを分析する手順を記述したNotebookを体感いただけます。 . NII謹製Literate Computing機能拡張 . Jupyterはもともとデータ分析用途に開発されたツールであるため、インフラの運用に適用するためにいくつかの機能拡張を施しています。以下は、その内容をご紹介するNotebookです。 . Notebookを介したコミュニケーション . Jupyterで行った経験を効率的に共有するためにいくつかの機能拡張を施しています。以下は、その内容をご紹介するNotebookです。 . Notebookの検索 . Jupyterで実施したNotebookを効率的に検索するための機能拡張を施しています。以下は、その内容をご紹介するNotebookです。 . OperationHub . Jupyter Notebookを用いた運用手順を複数人で効果的に共有・管理するために、JupyterHubを拡張したOperationHubを提供しています。 以下は、OperationHubをAWSアカウント内に構築し、試用するためのNotebookです。 . AWSへのアカウント登録が必要です。また、仮想マシン等の維持には一定の料金がかかります。ご自身の責任でお試しください。 .",
             "url": "https://literate-computing.github.io/fastpages/demo/news/2021/06/15/openhouse-2021-demo.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "リニューアルしました",
             "content": "FacebookのグループとしてLC4RIの状況をポストしてきましたが、fastpages を用いたブログの形にリニューアルしました。 . 実行可能な紹介を通じてLC4RIの実施状況をご報告できればと思います。 . このブログのPostは MyBinder で実行することができます。 . 参考までに、このPostを作った時のJupyter Notebookのバージョン: . !jupyter --version . jupyter core : 4.7.1 jupyter-notebook : 6.3.0 qtconsole : not installed ipython : 7.23.1 ipykernel : 5.5.4 jupyter client : 6.1.12 jupyter lab : 3.0.14 nbconvert : 6.0.7 ipywidgets : 7.6.3 nbformat : 5.1.3 traitlets : 5.0.5 . こんなことができたりします。 .",
             "url": "https://literate-computing.github.io/fastpages/news/2021/06/14/facebook-group-to-blog.html",
