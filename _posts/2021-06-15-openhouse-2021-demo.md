@@ -25,7 +25,7 @@ NII OpenHouse 2021向けのデモ環境です。
 [Binder](https://mybinder.readthedocs.io/en/latest/)サービスを使用すると、手元に計算環境がなくても、この環境を試すことができます。
 以下のボタンをクリックするとお試し環境が立ち上がります。
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NII-cloud-operation/Jupyter-LC_docker/openhouse-2021-demo)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NII-cloud-operation/Jupyter-LC_docker/openhouse-2021-demo?urlpath=tree)
 
 なお、この環境ではNotebookを自由に作成、編集することができますが、Notebookに対する変更等は、 **保存されません** 。この環境は[Binder](https://mybinder.readthedocs.io/en/latest/)サービスの上でデプロイされており、一定時間が経過すると自動的に削除されます。編集したNotebookなどの情報は失われますのでご注意ください。
 
