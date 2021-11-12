@@ -6,8 +6,7 @@
 
 https://literate-computing.github.io/fastpages/
 
-# My Blog
-
+# literate-computing.github.io
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
 
