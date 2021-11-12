@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "リニューアルしました",
-            "content": "TBD . FacebookのグループとしてLC4RIの状況をポストしてきましたが、fastpages を用いたブログの形にリニューアルしました。 . 実行可能な紹介を通じてLC4RIの実施状況をご報告できればと思います。 . このブログのPostは MyBinder で実行することができます。 TBD . !jupyter --version . jupyter core : 4.7.1 jupyter-notebook : 6.3.0 qtconsole : not installed ipython : 7.23.1 ipykernel : 5.5.4 jupyter client : 6.1.12 jupyter lab : 3.0.14 nbconvert : 6.0.7 ipywidgets : 7.6.3 nbformat : 5.1.3 traitlets : 5.0.5 .",
+            "content": "FacebookのグループとしてLC4RIの状況をポストしてきましたが、fastpages を用いたブログの形にリニューアルしました。 . 実行可能な紹介を通じてLC4RIの実施状況をご報告できればと思います。 . このブログのPostは MyBinder で実行することができます。 . 参考までに、このPostを作った時のJupyter Notebookのバージョン: . !jupyter --version . jupyter core : 4.7.1 jupyter-notebook : 6.3.0 qtconsole : not installed ipython : 7.23.1 ipykernel : 5.5.4 jupyter client : 6.1.12 jupyter lab : 3.0.14 nbconvert : 6.0.7 ipywidgets : 7.6.3 nbformat : 5.1.3 traitlets : 5.0.5 . こんなことができたりします。 .",
             "url": "https://literate-computing.github.io/fastpages/news/2021/06/14/facebook-group-to-blog.html",
             "relUrl": "/news/2021/06/14/facebook-group-to-blog.html",
             "date": " • Jun 14, 2021"
