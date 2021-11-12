@@ -1,6 +1,6 @@
-FROM fastai/jekyll:2020-12-30
+FROM fastai/jekyll:2021-02-03
 
-RUN pip install git+https://github.com/yacchin1205/nbdev.git@fix/attached-images
+RUN pip install git+https://github.com/fastai/nbdev.git
 
 WORKDIR /fastpages
 COPY . .
