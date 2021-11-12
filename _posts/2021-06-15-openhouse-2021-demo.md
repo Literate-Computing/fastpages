@@ -4,6 +4,7 @@ layout: post
 description: デモ環境のお知らせ
 categories: [demo, news]
 title: 国立情報学研究所オープンハウス 2021 デモ環境のお知らせ
+comments: true
 ---
 
 [国立情報学研究所オープンハウス 2021](https://www.nii.ac.jp/openhouse/)開催に合わせ、LC4RIを体験できるデモ環境をご用意しました。

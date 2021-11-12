@@ -2,6 +2,7 @@
 layout: page
 title: LC4RIツール(ja)
 permalink: /tools_ja/
+comments: true
 ---
 
 Literate Computing Toolsは、以下の目標を達成するためにJupyterを強化するためのものです。

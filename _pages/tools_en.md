@@ -2,6 +2,7 @@
 layout: page
 title: LC4RI tools(en)
 permalink: /tools_en/
+comments: true
 ---
 
 Literate Computing Tools are our enhancements to Jupyter for achieving the following goals:

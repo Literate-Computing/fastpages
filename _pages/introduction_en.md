@@ -2,6 +2,7 @@
 layout: page
 title: What is LC4RI?(en)
 permalink: /introduction_en/
+comments: true
 ---
 
 It is as essential as to share and communicate about infrastructure design and elaborated workflows with participants as to actually automate complex operations.
